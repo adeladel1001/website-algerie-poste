@@ -1,0 +1,171 @@
+/* Chatbot Container */
+.chatbox-container {
+    position: fixed;
+    bottom: 50px; /* Ajoutez un espace supplémentaire depuis le bas */
+    right: 50px; /* Ajoutez un espace supplémentaire depuis le bord droit */
+    z-index: 10000; /* S'assurer que le chatbot reste visible par-dessus tout */
+}
+
+/* Chatbox */
+.chatbox {
+    width: 300px; /* Largeur du bouton ou de l'icône initiale */
+    font-family: 'Nunito', sans-serif; /* Police utilisée */
+}
+
+/* Chatbox Support */
+.chatbox__support {
+    position: relative; /* Nécessaire pour positionner correctement le footer */
+    display: flex;
+    flex-direction: column; /* Organise les éléments verticalement */
+    background: #f9f9f9; /* Couleur de fond */
+    width: auto; /* Adapte la largeur automatiquement */
+    max-width: 600px; /* Limite maximale de largeur */
+    min-width: 350px; /* Limite minimale de largeur */
+    height: 500px; /* Hauteur fixe du chatbot */
+    margin: 0 auto; /* Centre horizontalement */
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1); /* Ombre portée */
+    border-radius: 20px; /* Arrondi des coins */
+    opacity: 0; /* Caché par défaut */
+    transform: translateY(20px); /* Légèrement décalé vers le bas par défaut */
+    transition: all 0.5s ease-in-out; /* Animation douce pour apparaître */
+    z-index: 10000; /* S'assurer qu'il reste visible */
+}
+
+.chatbox__support.chatbox--active {
+    opacity: 1; /* Devient visible */
+    transform: translateY(0); /* Annule le décalage */
+}
+
+/* Chatbox Button */
+.chatbox__button {
+    text-align: right;
+}
+
+.chatbox__button button,
+.chatbox__button button:focus,
+.chatbox__button button:visited {
+    padding: 10px; /* Espacement interne du bouton */
+    background: white; /* Couleur de fond */
+    border: none; /* Sans bordure */
+    outline: none; /* Sans contour */
+    border-radius: 50px; /* Bouton rond */
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1); /* Ombre portée */
+    cursor: pointer; /* Curseur "pointeur" au survol */
+    transition: background 0.3s ease; /* Animation pour le changement de fond */
+}
+
+.chatbox__button button:hover {
+    background: rgb(255, 223, 0); /* Couleur jaune au survol */
+}
+
+/* Chatbox Header */
+.chatbox__header {
+    background: linear-gradient(93.12deg, #eeee0b 0.1%, #0b0fde 100%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.chatbox__heading--header {
+    font-size: 1.2rem; /* Taille du texte */
+    color: white; /* Couleur du texte */
+}
+
+.chatbox__description--header {
+    font-size: 0.9rem; /* Taille du texte */
+    color: white; /* Couleur du texte */
+}
+
+/* Chat Messages */
+.chatbox__messages {
+    flex-grow: 1; /* Remplit tout l'espace restant entre le header et le footer */
+    padding: 10px 20px; /* Espacement interne */
+    overflow-y: auto; /* Ajoute une barre de défilement verticale si nécessaire */
+    max-height: calc(100% - 110px); /* Limite la hauteur pour éviter le dépassement */
+    display: flex;
+    flex-direction: column; /* Affiche les messages dans l'ordre naturel */
+    scroll-behavior: smooth; /* Défilement fluide */
+}
+
+.messages__item {
+    margin-top: 5px; /* Espacement entre les messages */
+    background: #E0E0E0; /* Fond des messages */
+    padding: 8px 10px; /* Espacement interne */
+    max-width: 90%; /* Largeur maximale des messages */
+    border-radius: 20px; /* Arrondi des coins */
+    font-size: 0.9rem; /* Taille du texte */
+    line-height: 1.4; /* Hauteur de ligne */
+}
+
+.messages__item--visitor {
+    align-self: flex-start; /* Alignement à gauche (messages du bot) */
+    background: #dcdcdc; /* Fond des messages du bot */
+    color: #333; /* Couleur du texte du bot */
+}
+
+.messages__item--operator {
+    align-self: flex-end; /* Alignement à droite (messages de l'utilisateur) */
+    background: rgb(26, 95, 243); /* Fond des messages de l'utilisateur */
+    color: white; /* Couleur du texte de l'utilisateur */
+}
+
+/* Chatbox Footer */
+.chatbox__footer {
+    position: absolute; /* Fixez le footer en bas du conteneur */
+    bottom: 0; /* Positionnez le footer au bas du conteneur */
+    left: 0;
+    width: 100%; /* Assurez-vous qu'il occupe toute la largeur */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px; /* Ajoutez un espacement interne */
+    background: linear-gradient(93.12deg, #eeee0b 0.1%, #0b0fde 100%);
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.chatbox__footer input {
+    width: 80%; /* Largeur de la zone de saisie */
+    border: none; /* Pas de bordure */
+    padding: 10px 15px; /* Espacement interne */
+    border-radius: 30px; /* Arrondi */
+    outline: none; /* Pas de contour */
+    font-size: 0.9rem; /* Taille du texte */
+}
+
+.chatbox__send--footer {
+    background: none; /* Sans fond */
+    border: none; /* Pas de bordure */
+    color: white; /* Couleur du texte */
+    cursor: pointer; /* Curseur "pointeur" */
+    font-size: 1rem; /* Taille du texte */
+    transition: color 0.3s ease; /* Animation douce pour le changement de couleur */
+}
+
+.chatbox__send--footer:hover {
+    color: rgb(255, 223, 0); /* Couleur jaune au survol */
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .chatbox-container {
+        right: 20px; /* Réduit le décalage sur petits écrans */
+        bottom: 20px;
+    }
+
+    .chatbox__support {
+        width: 90%; /* Adapte la largeur à l'écran */
+        height: 400px; /* Réduit la hauteur pour petits écrans */
+    }
+
+    .messages__item {
+        max-width: 80%; /* Ajuste la largeur des messages pour les petits écrans */
+    }
+}

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>Algérie Poste</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" type="image/png" href="images/logo-head.png" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-eNMB0dq8ZPvVCq2W0x3Dk1zO9LL3byS+1xJ1y+uZ3IYQoRfEXUrhYHqDb6c8E6D2" crossorigin="anonymous" />
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Chatbot CSS -->
+    <link rel="stylesheet" href="css/chatbot.css">
+</head>
+
+<body class="fr" id="homepage-page">
+
+    <!-- Header -->
+    <header class="site-header">
+        <nav class="navbar">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">
+                    <img class="logo" alt="Algérie Poste" src="images/logo-head.png" />
+                </a>
+                <button class="navbar-toggle" type="button">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+
+            <ul class="navbar-nav">
+                <li><a href="#news">Actualité</a></li>
+                <li><a href="#servicespart">Services Particuliers</a></li>
+                <li><a href="#servicescor">Services Corporate</a></li>
+                <li><a href="#philately">Philatélie</a></li>
+                <li><a href="#avis">Avis et Appels d'offres</a></li>
+            </ul>
+
+            <ul class="navbar-social">
+                <li>
+                    <a href="https://www.facebook.com/algerieposteofficiel"><img src="images/facebook.png" alt="Facebook"></a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/postedz"><img src="images/twitter.png" alt="Twitter"></a>
+                </li>
+                <!-- Supprimer les liens Instagram et YouTube si nécessaire -->
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <div id="wrap">
+
+        <!-- Image Statique Section -->
+        <section class="static-image-section">
+            <div class="static-image-caption">
+                <h2>Bienvenue chez Algérie Poste</h2>
+                <p>Découvrez nos services innovants et adaptés à vos besoins.</p>
+                <a href="#servicespart">En savoir plus</a>
+            </div>
+        </section>
+
+        <!-- Actualité Section -->
+        <section class="content-section news-section" id="news">
+            <div class="heading-section home-heading">
+                <h2>Actualité</h2>
+                <p>Suivez au quotidien toute l'actualité d'Algérie Poste</p>
+            </div>
+
+            <!-- Featured Article -->
+            <div class="featured">
+                <div class="media" style="background-image: url('images/back.jpg');"></div>
+                <div class="info">
+                    <h4>COMMUNIQUÉ DE PRESSE</h4>
+                    <p>Algérie Poste annonce le lancement officiel d’INNOVPOST, le premier hackathon national dédié à l'innovation technologique dans le...</p>
+                    <a class="btn" href="/news/s/communique-de-presse-29">Lire l'article</a>
+                </div>
+            </div>
+
+            <!-- Ajouter plus d'articles si nécessaire -->
+        </section>
+
+        <!-- Services Particuliers Section -->
+        <section class="content-section services-section" id="servicespart">
+            <div class="heading-section home-heading">
+                <h2>Services Particuliers</h2>
+                <p>DÉCOUVREZ LES SERVICES DESTINÉS AU GRAND PUBLIC</p>
+            </div>
+
+            <div class="service-landbox">
+                <div class="col">
+                    <a href="/services/particular">
+                        <img src="images/SM.png" alt="Services Monétiques"/>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="/customer">
+                        <img src="images/SP.png" alt="Services Postaux"/>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="/services/professional">
+                        <img src="images/SF.png" alt="Services Financiers"/>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Corporate Section -->
+        <section class="content-section services-section" id="servicescor">
+            <div class="heading-section home-heading">
+                <h2>Services Corporate</h2>
+                <p>SERVICES DESTINÉS AUX PROFESSIONNELS &amp; AUX ENTREPRISES</p>
+            </div>
+
+            <div class="services-wrap">
+                <a href="/services/corporate">
+                    <img src="images/SC.png" alt="Services Corporate"/>
+                </a>
+            </div>
+        </section>
+
+        <!-- Philatélie Section -->
+        <section class="content-section philately-section" id="philately">
+            <div class="heading-section home-heading">
+                <h2>Philatélie</h2>
+                <p>Toutes les émissions des timbres de l'Algérie depuis 1962</p>
+            </div>
+
+            <div class="philately-landbox">
+                <a href="/philately" class="btn">Découvrir</a>
+                <a href="/uploads/print/ProgrammePhilatelique.pdf" class="btn">Programme</a>
+            </div>
+        </section>
+
+        <!-- Appels d'offres Section -->
+        <section class="content-section tender-section" id="avis">
+            <div class="heading-section home-heading">
+                <h2>Appels d'offres</h2>
+                <p>Consultez les tous derniers appels d'offres</p>
+            </div>
+
+            <!-- Ajouter le contenu pour Appels d'offres ici -->
+        </section>
+
+    </div> <!-- End of Wrap -->
+
+    <!-- Chatbot Integration -->
+    <div class="chatbox-container">
+        <div class="chatbox">
+            <div class="chatbox__support">
+                <div class="chatbox__header">
+                    <div class="chatbox__content--header">
+                        <h4 class="chatbox__heading--header">Algérie Poste</h4>
+                        <p class="chatbox__description--header">Salam. Comment je peux vous aider?</p>
+                    </div>
+                </div>
+                <div class="chatbox__messages">
+                    <!-- Les messages apparaîtront ici -->
+                </div>
+                <div class="chatbox__footer">
+                    <input type="text" placeholder="Entrer un message...">
+                    <button class="chatbox__send--footer send__button">Envoyer</button>
+                </div>
+            </div>
+            <div class="chatbox__button">
+                <button><img src="images/AlgeriePoste.svg" alt="Chatbot Icon" /></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="content-section" id="footer-section">
+        <div class="footer-inner">
+            <div class="container">
+                <div class="row">
+                    <!-- Colonne 1 -->
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <h4>Présence Postale</h4>
+                        <div class="list-group">
+                            <a href="/customer/bureaux_postaux" class="list-group-item">Liste des Bureaux de Poste</a>
+                            <a href="/customer/bureaux_postaux_itinerant" class="list-group-item">Liste des Bureaux de Poste Itinérants</a>
+                            <a href="/customer/gab" class="list-group-item">Liste des GAB</a>
+                            <a href="/customer/cdd" class="list-group-item">Liste des CDD</a>
+                            <a href="/customer/ctr_cpx_ctni" class="list-group-item">Liste des CTR, CPX, CTNI</a>
+                        </div>
+                        <br>
+                        <h4>F.A.Q</h4>
+                        <div class="list-group">
+                            <a href="/faqM" class="list-group-item">Services Monétiques</a>
+                            <a href="/faqSF" class="list-group-item">Services Financiers</a>
+                            <a href="/faqCC" class="list-group-item">Services Postaux (Courrier/Colis)</a>
+                            <a href="/faqRP" class="list-group-item">Réseau Postal</a>
+                        </div>
+                    </div>
+
+                    <!-- Colonne 2 -->
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <h4>CONTACT</h4>
+                        <div class="list-group">
+                            <div class="list-group-item">
+                                <p><b>Adresse :</b> Quartier des affaires, 16024, Bab Ezzouar, Algérie</p>
+                                <p><b>NIF :</b> 000216002104442 &nbsp; <b>RC :</b> 16 /00-0021044 B 02</p>
+                                <p><b>Tél :</b> 023 92 32 00 &nbsp; <b>Fax :</b> 023 92 31 70</p>
+                                <p><b>E-Mail :</b> clientap@poste.dz</p>
+                                <p>Pour toute réclamation, appelez notre :</p>
+                                <p><img src="images/1530.png" alt="1530" style="max-width: 70%; height: auto;"></p>
+                                <p><b><a href="/customer/dupw">Liste des contacts des Unités Postales Wilaya</a></b></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Colonne 3 -->
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <h4>À propos</h4>
+                        <div class="list-group">
+                            <a href="/page/presentation" class="list-group-item">Présentation</a>
+                            <a href="/page/historique" class="list-group-item">Historique de la Poste</a>
+                            <a href="/uploads/graphic-charter-fr.pdf" class="list-group-item">Téléchargez la Charte Graphique</a>
+                            <a href="/uploads/quality-policy3.pdf" class="list-group-item">Politique Qualité d'Algérie Poste</a>
+                            <a href="/uploads/docs/Recueil_de_textes_legislatifs.pdf" class="list-group-item">Recueil de textes législatifs</a>
+                        </div>
+                        <br>
+                        <h4>Espace Postier</h4>
+                        <div class="list-group">
+                            <a href="/candidatures" class="list-group-item">Appels à Candidature interne</a>
+                            <a href="/elearning" class="list-group-item">e-Learning</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mini-footer">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <ul class="list-inline">
+                            <li>
+                                <a href="/login">
+                                    <i class="fas fa-user fa-fw"></i> Connexion
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4">
+                        Copyright © 2024 Algérie Poste. Tous droits réservés
+                    </div>
+                    <div class="col-lg-3 text-right">
+                        <!-- Contenu supplémentaire si nécessaire -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Font Awesome JS -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+    <!-- Main JavaScript -->
+    <script src="js/chatbot.js"></script>
+</body>
+</html>
